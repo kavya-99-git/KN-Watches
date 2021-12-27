@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image: url('payment.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .payment
+            {
+	            max-width:350px;
+	            border-radius:10px;
+	            margin-left: 12%;
+	            background:rgba(0,0,0,1);
+	            box-sizing:border-box;
+	            padding:40px;
+	            color:#fff;
+	            margin-top:4%;
+	            font-size: 27px;
+                    font-family: 'Times New Roman', Times, serif;
+		    opacity:0.9;
+
+            }
+            input[type=text]
+            {
+	            width:100%;
+	            box-sizing:border-box;
+	            padding:12px 5px;
+	            background:rgba(0,0,0,0.10);
+	            outline:none;
+	            border:none;
+	            border-bottom:1px dotted #fff;
+	            color:#fff;
+	            border-radius:5px;
+	            margin:5px;
+	            font-weight:bold;
+                    font-size: 96%;
+            }
+            input[type=radio]
+            {
+	
+	            padding:12px 5px;
+	            background:rgba(0,0,0,0.10);
+	            margin:5px;
+	            font-weight:bold;
+	            zoom: 200%;
+            }
+            input[type=submit]
+            {
+	            width:100%;
+	            box-sizing:border-box;
+	            padding:10px 0;
+	            margin-top:30px;
+	            outline:none;
+	            background:#60de86;
+	            opacity:0.7;
+	            border-radius:20px;
+	            font-size:140%;
+	            color:#fff;
+            }
+
+            input[type=submit]:hover
+            {
+	            background:#426600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="payment">
+        <form action="feedback.html" method="post">
+            <input type="text" name="phno" placeholder="Enter the phno" required><br><br>
+            <input type="text" name="addres" placeholder="Enter the address" required><br><br><br>
+           <b><u> Payment mode</u></b><br>
+           <input type="radio" name="radio" value="Cash on delivery" checked> Cash on delivery<br>
+           <input type="radio" name="radio" value="Wallet"> Wallet<br>
+            <input type="submit" name="submit" value="pay"><br><br>
+                <a href="home.html"><button type="submit" style="width:130px; height:40px;font-size:29px;">CANCEL</a></button>
+        </form>
+        </div>
+    </body>
+</html>
